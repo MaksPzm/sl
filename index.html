@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+     
     <title>slider</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <p class="wrapper__block-one_text">Only a small part of the work performed by our company is presented<br>
                     on the site. For 14 years on in the construction<br> 
                     market we have made happy more than 1000 families</p>
-                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specifications-Rostov-Admiral">
+                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specifications-Rostov-Admiral" data-name="aa1">
                         <div class="wrapper__block-one_specificationsALL_elem">
                             <h3 class="wrapper__block-one_specifications_title-h3">CITY:</h3>
                             <span class="wrapper__block-one_specifications_text">
@@ -42,7 +42,7 @@
                             <span class="wrapper__block-one_specifications_text">Upon request</span>
                         </div> 
                     </div>
-                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specificationsALL-hidden wrapper__block-one_specifications-Sochi">
+                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specificationsALL-hidden wrapper__block-one_specifications-Sochi" data-name="aa2">
                         <div class="wrapper__block-one_specificationsALL_elem">   
                             <h3 class="wrapper__block-one_specifications_title-h3">CITY:</h3>
                             <span class="wrapper__block-one_specifications_text">
@@ -63,7 +63,7 @@
                             <span class="wrapper__block-one_specifications_text">Upon request</span>
                         </div>
                     </div>
-                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specificationsALL-hidden wrapper__block-one_specifications-Rostov-Patriotic">
+                    <div class="wrapper__block-one_specificationsALL wrapper__block-one_specificationsALL-hidden wrapper__block-one_specifications-Rostov-Patriotic" data-name="aa3">
                         <div class="wrapper__block-one_specificationsALL_elem">   
                             <h3 class="wrapper__block-one_specifications_title-h3">CITY:</h3>
                             <span class="wrapper__block-one_specifications_text">
@@ -87,9 +87,9 @@
                     <nav class="wrapper__block-one_nav">
                         <img class="wrapper__block-one_nav-left" src="images/svg/st-left.svg" alt="left">
                         <div class="wrapper__block-one_nav-conteiner">
-                            <div class="nav nav_one nav-active"></div>
-                            <div class="nav nav_two"></div>
-                            <div class="nav nav_three"></div>
+                            <div class="nav nav_one nav-active" data-name="aa1"></div>
+                            <div class="nav nav_two" data-name="aa2"></div>
+                            <div class="nav nav_three" data-name="aa3"></div>
                         </div>
                         <img class="wrapper__block-one_nav-right" src="images/svg/st-right.svg" alt="right">
                     </nav>
@@ -97,18 +97,19 @@
             <div class="wrapper__block-two">
                 <nav class="wrapper__block-two_nav">
                     <ul class="wrapper__block-two_nav_list">
-                        <li class="wrapper__block-two_nav_list_item block-two_nav_list_item_active">Rostov-on-Don, Admiral</li>
-                        <li class="wrapper__block-two_nav_list_item">Sochi Thieves</li>
-                        <li class="wrapper__block-two_nav_list_item">Rostov-on-Don Patriotic</li> 
+                        <li class="wrapper__block-two_nav_list_item block-two_nav_list_item_active" data-name="aa1">Rostov-on-Don, Admiral</li>
+                        <li class="wrapper__block-two_nav_list_item" data-name="aa2">Sochi Thieves</li>
+                        <li class="wrapper__block-two_nav_list_item" data-name="aa3">Rostov-on-Don Patriotic</li> 
                     </ul>   
                 </nav>
                 <div class="wrapper__block-two_elem-img">
-                    <img class="wrapper__block-two_img img-active" src="images/png/Rostov-Admiral.png" alt="Rostov Admiral">
-                    <img class="wrapper__block-two_img" src="images/png/Sochi.png" alt="Sochi">
-                    <img class="wrapper__block-two_img" src="images/png/Rostov-Patriotic.png" alt="Rostov Patriotic">
+                    <img class="wrapper__block-two_img img-active" data-name="aa1" src="images/png/Rostov-Admiral.png" alt="Rostov Admiral">
+                    <img class="wrapper__block-two_img" data-name="aa2" src="images/png/Sochi.png" alt="Sochi">
+                    <img class="wrapper__block-two_img" data-name="aa3" src="images/png/Rostov-Patriotic.png" alt="Rostov Patriotic">
                 </div>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

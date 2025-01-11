@@ -1,7 +1,8 @@
 addEventListener('DOMContentLoaded', function() {
     btnSpecification();
-    changeImg();
+    //changeImg();
     showSpecifications();
+    //showImg();
 })
 
 const btnSpecification = () => {
@@ -15,26 +16,55 @@ const btnSpecification = () => {
     })
 }
 
-const changeImg = () => {
-    const searchImg = this.document.querySelectorAll('.wrapper__block-two_img');
-    Array.from(searchImg) 
-    console.log(searchImg);
+
+const showImg = Array.from(document.querySelectorAll('.wrapper__block-two_img'));
+//console.log(showImg);
+const showNav = Array.from(document.querySelectorAll('.nav'));
+
     
-}
-
-//  const showSpecifications = () => {
-//      const specification = querySelectorAll('.wrapper__block-one_specificationsALL');
-//      Array.from(specification).forEach(i => {
-//          i.classList.add('.wrapper__block-one_specificationsALL-hidden');
-//          i.classList.remove('wrapper__block-one_specificationsALL-hidden');
-//      })
-//  }
-
 
 const showSpecifications = () => {
     const searchSpec = Array.from(document.querySelectorAll('.wrapper__block-two_nav_list_item'));
     const searchSpecification = Array.from(document.querySelectorAll('.wrapper__block-one_specificationsALL'));
     console.log(searchSpec, searchSpecification);
-    
-    
+    searchSpec[0].addEventListener('click', function() {
+        searchSpecification.forEach(v => v.classList.add('wrapper__block-one_specificationsALL-hidden'));      
+        showImg.forEach(v => v.classList.remove('img-active'));
+        searchSpecification[0].classList.remove('wrapper__block-one_specificationsALL-hidden');
+        showImg[0].classList.add('img-active');
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[0].classList.add('nav-active');
+    })
+    searchSpec[1].addEventListener('click', function() {
+        searchSpecification.forEach(v => v.classList.add('wrapper__block-one_specificationsALL-hidden'));    
+        showImg.forEach(v => v.classList.remove('img-active'));
+        searchSpecification[1].classList.remove('wrapper__block-one_specificationsALL-hidden');
+        showImg[1].classList.add('img-active');
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[1].classList.add('nav-active');
+    })
+    searchSpec[2].addEventListener('click', function() {
+        searchSpecification.forEach(v => v.classList.add('wrapper__block-one_specificationsALL-hidden'));
+        showImg.forEach(v => v.classList.remove('img-active'));   
+        searchSpecification[2].classList.remove('wrapper__block-one_specificationsALL-hidden');
+        showImg[2].classList.add('img-active');
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[2].classList.add('nav-active');
+    })    
 }
+
+const showNavS = (() => {
+    showNav[0].addEventListener('click', () => {
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[0].classList.add('nav-active');
+    })
+    showNav[1].addEventListener('click', () => {
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[1].classList.add('nav-active');
+    })
+    showNav[2].addEventListener('click', () => {
+        showNav.forEach(v => v.classList.remove('nav-active'));
+        showNav[2].classList.add('nav-active');
+    })
+        
+})()
