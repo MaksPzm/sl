@@ -69,7 +69,7 @@
         
 // })()
 
-
+//https://codepen.io/ytokarevskaya/pen/bGpbwzd?editors=1010
 const initSlider = () => {
     let sliderImg = Array.from(document.querySelectorAll('.wrapper__block-two_img'));
     let sliderArrows = document.querySelectorAll('.wrapper__block-one_nav_arrow');
