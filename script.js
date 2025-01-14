@@ -52,7 +52,6 @@ function initSlider() {
       sliderSpecification.forEach(item => {
         item.classList.add('wrapper__block-one_specificationsALL-hidden');
       })
-      let curSpec = Array.from(sliderSpecification);
       document.querySelector('.specificationsALL' + num).classList.remove('wrapper__block-one_specificationsALL-hidden');
     }
 
